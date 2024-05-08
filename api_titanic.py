@@ -5,7 +5,7 @@ import pandas as pd
 
 app = FastAPI()
 
-
+#test
 @app.post("/titanic")
 def prediction_api(pclass: int, sex: int, age: int) -> bool:
     # Load model
