@@ -14,7 +14,7 @@ def clean_data(df: pd.DataFrame)-> pd.DataFrame:
     #suppression des lignes avec des valeurs manquantes
     #remplacer les valeurs non numériques par des valeurs numeriques
     df = df[['survived', 'pclass', 'sex', 'age']]
-    df['sex'] = df['sex'].map({'female': 0,'male':1})
+    df['sex'] = df['sex'].map({'female': 1,'male':0})
     df.dropna(inplace=True)
     return df
 
