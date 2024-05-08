@@ -13,6 +13,6 @@ class TestTrain(TestCase):
         result_df = clean_data(df)
 
         self.assertEqual(result_df.shape[0],3)
-        self.assertEqual(result_df.loc["sex"][0],0)
+        self.assertEqual(result_df["sex"][0],0)
 
 
