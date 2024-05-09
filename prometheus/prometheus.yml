@@ -4,7 +4,7 @@ global:
   evaluation_interval: 5s
 # Scrape configs only contain one scrape target
 scrape_configs:
-  - job_name: 'titanic-api'
+  - job_name: 'ml-model'
     scrape_interval: 5s
     static_configs:
       - targets: [host.docker.internal:5000]
